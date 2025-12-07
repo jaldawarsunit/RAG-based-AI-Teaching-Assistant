@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Teaching Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>Python Teaching Assistant</h1>
+            </div>
+            <div class="subtitle">
+                <p>Ask questions about CodeWithHarry's Python course</p>
+            </div>
+            <button id="clearChat" class="btn-clear">
+                <i class="fas fa-trash"></i> Clear Chat
+            </button>
+        </header>
+
+        <!-- Chat Container -->
+        <div class="chat-container" id="chatContainer">
+            <!-- Welcome message -->
+            <div class="message assistant">
+                <div class="avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="content">
+                    <div class="message-header">
+                        <span class="sender">Teaching Assistant</span>
+                        <span class="time">Just now</span>
+                    </div>
+                    <div class="message-text">
+                        Hello! I'm your Python Teaching Assistant. I can help you find specific topics in CodeWithHarry's Python course videos. Ask me anything about the course content!
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Messages will be added here dynamically -->
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <div class="input-wrapper">
+                <textarea 
+                    id="messageInput" 
+                    placeholder="Ask about Python concepts, video timestamps, or course content..."
+                    rows="1"
+                ></textarea>
+                <button id="sendButton" class="btn-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="hint">
+                <i class="fas fa-lightbulb"></i>
+                Example: "Where is loops taught?" or "Explain functions in Python"
+            </div>
+        </div>
+
+        <!-- Processing Overlay -->
+        <div id="processingOverlay" class="processing-overlay">
+            <div class="processing-content">
+                <div class="thinking-animation">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="processing-steps">
+                    <div class="step active" id="step1">
+                        <i class="fas fa-search"></i>
+                        <span>Analyzing your question...</span>
+                    </div>
+                    <div class="step" id="step2">
+                        <i class="fas fa-database"></i>
+                        <span>Searching course content...</span>
+                    </div>
+                    <div class="step" id="step3">
+                        <i class="fas fa-brain"></i>
+                        <span>Generating response...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

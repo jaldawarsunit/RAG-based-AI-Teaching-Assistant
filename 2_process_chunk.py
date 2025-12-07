@@ -10,8 +10,7 @@ for audio in audios:
     print(number,title)
 
     result = model.transcribe(
-        audio=fr"C:/Users/jalda/OneDrive/Desktop/RAG based AI teacher/audios/{audio}",
-        # audio=r"C:/Users/jalda/OneDrive/Desktop/RAG based AI teacher/sample.mp3",
+        audio=fr"c:/Users/NANI/Desktop/RAG based AI teacher/audios/{audio}",
         language="hi",  
         task="translate",
         word_timestamps=False
@@ -25,10 +24,6 @@ for audio in audios:
     with open(f"json/{audio}.json","w") as f:
         json.dump(chunks_with_metadata,f)
 
-# # with open("output.json","w") as f:
-# #     json.dump(f, result)
 
-# # with open("hindi.txt", "w", encoding="utf-8") as f:
-# #     f.write(result["text"])
 
-# # print("Transcription saved to hindi.txt")
+

@@ -1,0 +1,5 @@
+I'd be happy to help you with your Python course.
+
+You're asking about where loop is taught in the course. 
+
+In Video 1, the concept of loops was introduced at around 5 seconds (2934.0) and further explained until 2 seconds later (2936.0).

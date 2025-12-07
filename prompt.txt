@@ -1,0 +1,6 @@
+I am teaching python using one shot taught by code with harry youtuber. Here are video subtitle chunks containing video title, video number, start time in seconds, end time in seconds, the text at that time:
+
+[{"title":"Python_Apna_College","number":"1","start":2934.0,"end":2936.0,"text":" is loop"},{"title":"Python_Apna_College","number":"1","start":2976.0,"end":2978.0,"text":" loops"},{"title":"Python_Apna_College","number":"1","start":2936.0,"end":2938.0,"text":" so let's understand loop"}]
+--------------------------------
+"where loop is taught"
+User asked this question related to the video chunks, you have to answer in a human way (don't mention the above format, it's just for you) where and how much content is taught in which video (in which video and at what timestamp) and guide the user to go to that particular video. If user asked unrelated question, tell him that you can only answer questions related to the course.
